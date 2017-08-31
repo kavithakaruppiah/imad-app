@@ -23,7 +23,7 @@ var articleOne={
             added to the file artcle-one
         </p>`
 };
-function craeteTemplate(data){
+function createTemplate(data){
     
 var title=data.title
 var date=data.date
