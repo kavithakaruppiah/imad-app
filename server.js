@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var pool=require('pg').pool;
+
 var config={
        user: 'kavikarup',
        database: 'kavikarup',
@@ -68,6 +68,7 @@ var articles={
         </p>`
 }
 };
+var pool=new Pool(config);
 
 function createTemplate(data){
     
